@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "width=device-width,initial-scale=1">
+        <title>Feedback</title>
+        <link rel="stylesheet" type="text/css" href="feedback.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "container">
+
+            <!-- header-->
+            <header id = "header">
+                <div id = "logo">
+                    <img src = "images/logo.png" alt ="logo">
+                </div>
+                <nav class = "navbar">
+                    <ul class = "dropdown">
+                        <li><a href = "index.html" >Home</a></li>
+                        <li><a href = "HowToCook.html" >How To?</a>
+                            <ul>
+                                <li><a href = "pho.html">Pho</a></li>
+                                <li><a href = "SpicyNoodlesBeef.html">Bun Bo</a></li>
+                                <li><a href = "springRoll.html">Spring Roll</a></li>
+                            </ul>
+
+                        </li>
+                        <li><a class = "active" href = "feedback.html" >Feedback</a></li>
+                        <li><a href = "About.html" >About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--main content-->
+            <article id = "main">
+                <h1>How do you like my sites?</h1>
+
+                <!-- send the form to my email address-->
+                <form method = "post" action = "https://formspree.io/lhkhoi95@gmail.com">
+                    <label>Your Name:
+                        <input type ="text" placeholder = "(Optional)" id = "name" name = "username" value = "">
+                    </label>
+                    <!--Structure-->
+                    <fieldset>
+                        <legend>Website Evaluation:</legend>
+                        <table>
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Structure:</label></th>
+                                <td>
+                                    <!--Evaluation options -->
+                                    <label class="radio">
+                                        <input type="radio" value = "1" name="GradeForStructure">
+                                        1
+                                    </label>
+
+                                    <label class="radio">
+                                        <input type="radio" value = "2" name="GradeForStructure">
+                                        2
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "3" name="GradeForStructure">
+                                        3
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "4" name="GradeForStructure">
+                                        4
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "5" name="GradeForStructure">
+                                        5
+                                    </label>
+                                </td>
+
+
+                            </tr>    
+                            <!--Content-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Content:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <label class="radio">
+                                        <input type="radio" value = "1" name="GradeForContent">
+                                        1
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "2" name="GradeForContent">
+                                        2
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "3" name="GradeForContent">
+                                        3
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "4" name="GradeForContent">
+                                        4
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" value = "5" name="GradeForContent">
+                                        5
+                                    </label>
+                                </td>
+                            </tr>
+                            <!--Color-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Color:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="radio">
+                                            <input type="radio" value = "1" name="GradeForColor">
+                                            1
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "2" name="GradeForColor">
+                                            2
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "3" name="GradeForColor">
+                                            3
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "4" name="GradeForColor">
+                                            4
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForColor">
+                                            5
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!--Image-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Image:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="radio">
+                                            <input type="radio" value = "1" name="GradeForImage">
+                                            1
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "2" name="GradeForImage">
+                                            2
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "3" name="GradeForImage">
+                                            3
+                                        </label>
+                                        <label class="radio" >
+                                            <input type="radio" value = "4" name="GradeForImage">
+                                            4
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForImage">
+                                            5
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!--Font-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Font:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="radio">
+                                            <input type="radio" value = "1" name="GradeForFont">
+                                            1
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "2" name="GradeForFont">
+                                            2
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "3" name="GradeForFont">
+                                            3
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "4" name="GradeForFont">
+                                            4
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForFont">
+                                            5
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!--Usability-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Usability:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForUsability">
+                                            1
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForUsability">
+                                            2
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForUsability">
+                                            3
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForUsability">
+                                            4
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForUsability">
+                                            5
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!--Interactive-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Interactive:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="radio">
+                                            <input type="radio" value = "1" name="GradeForInteractive">
+                                            1
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "2" name="GradeForInteractive">
+                                            2
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "3" name="GradeForInteractive">
+                                            3
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "4" name="GradeForInteractive">
+                                            4
+                                        </label>
+                                        <label class="radio">
+                                            <input type="radio" value = "5" name="GradeForInteractive">
+                                            5
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            <!--Responsive-->
+                            <tr class = "rows">
+                                <th class = "gradeCells"><label>Responsive:</label></th>
+                                <td class = "gradeCells">
+                                    <!--Evaluation options -->
+                                    <span class="evaluate">
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="responsive" value = "Ondesktop">
+                                            Desktop
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="responsive" value = "onIpad">
+                                            Ipad
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="responsive" value = "onMobile">
+                                            Mobile
+                                        </label>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="responsive" value = "onOtherDevices">
+                                            Other Devices
+                                        </label>
+                                    </span>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </fieldset>
+                    <div>
+                        <label id = "tryRecipe">Would you try the recipe?:</label>
+                        <select id="recipe" name = "TryRecipe">
+                            <option value="None">(None)</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">May be</option>
+                        </select> 
+                    </div>
+                    <div>
+                        <label>Any Comments?</label>
+                        <textarea placeholder="Comments go here" rows="7" cols="40" name = "comments"></textarea>
+                    </div>
+                    <!-- Send and Reset Buttons-->
+                    <input type = "submit" class = "Button" value = "Send">
+                    <input type = "reset" class = "Button">
+                </form>
+            </article>
+            <div id ="left"></div>
+            <div id ="right"></div>
+
+
+            <!-- footer-->
+            <footer id = "foot">
+                <p>
+                    <i class="material-icons">email</i>
+                    Email:
+                    <a href="mailto:lhkhoi95@gmail.com?Subject=Hello%20again" target="_top">lhkhoi95@gmail.com</a>
+                </p>
+                <a href = "FinalProjectProposal/content.html">My Proposal</a>
+
+            </footer>
+        </div>
+    </body>
+
+</html>

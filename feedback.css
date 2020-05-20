@@ -1,0 +1,224 @@
+/*common CSS rules*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snowburst+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin:-8px;
+}
+#container{
+    display:grid;
+    grid-template-areas: 
+        'header header header'
+        'left main right'
+        'footer footer footer';
+    grid-template-columns: 30% 40% 30%;
+}
+h1{
+    padding-left:10px;
+    font-family: 'Libre Baskerville', serif;
+    color:#9b3c2e;
+    padding-top:20px;
+    text-align: center;
+}
+#main{
+    grid-area: main;
+    font-family: "Source Sans Pro","Arial";
+    line-height: 1.6em;
+    background:#f3e6be;
+
+}
+#left{
+    grid-area: left;
+    background:#f5a883;
+}
+#right{
+    grid-area: right;
+    background:#b7c06f;
+}
+#header
+{
+    background: #dde0b6;
+    grid-area: header;
+} 
+/*menu bar*/
+/*hide submenu*/
+.dropdown > li > ul{
+	list-style:none;
+	visibility: hidden;
+	opacity:0;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	margin: 0;
+	z-index: 1;
+	padding:0px;
+	line-height: 1.6em;
+	left:-200px;
+}
+
+/*show submenu when hover*/
+nav.navbar > ul.dropdown > li:hover > ul{
+	position: absolute;
+	z-index: 1;
+	visibility: visible;
+	opacity:1;
+	transition:all 0.2s ease-out;
+	transform:translateX(200px);
+	background:#dde0b6;
+
+}
+nav.navbar{
+	text-align: center;
+	font-size:14px;
+}
+nav.navbar > ul.dropdown > li > ul > li{
+	width:100%;
+}
+
+
+nav.navbar > ul.dropdown > li > ul > li > a{
+	font-size: 25px;
+	width: auto;
+	display:block;
+	padding: 10px 0;
+}
+
+.active
+{
+	background:#b7c06f;
+}
+
+
+/* parent list for menus */
+.dropdown{
+	display:inline-block;
+	padding-left:0;
+	background:#f1e3cb;
+	margin-bottom: 5px;
+}
+/* top-level menu items */
+.dropdown li 
+{
+	position: relative;
+	border: 2px solid #9b3c2e;
+	display:inline-block;
+	background:#f3e6be;
+	list-style:none;
+	margin-right:-4px;
+}
+.dropdown a{
+	font-size:40px;
+	color:#9b3c2e;
+	text-decoration:none;
+	font-family: 'Libre Baskerville', serif;
+	padding:0 10px;
+}
+nav.navbar ul.dropdown a:hover{
+	background:#b7c06f;
+	box-shadow: 10px 5px;
+}
+/*end of menu bar rules*/
+#logo
+{
+    text-align: center;
+}
+#foot
+{
+    grid-area: footer;
+    background: #dde0b6;
+    font-size:15px;
+    text-align: center;
+}
+form{
+    line-height: 1.6em;
+    padding:20px;
+}
+
+.rows:nth-child(even){
+    background:#dde0b6;
+}
+table th{
+    text-align: left;
+}
+td{
+    width:100%;
+}
+legend{
+    font-weight: bold;
+}
+.Button{
+    background-color:forestgreen; /* Green */
+    border: none;
+    border-radius: 50px;    
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.Button:hover{
+    background-color:#9b3c2e;
+}
+.radio{
+    padding:0px 20px 0px 20px;
+}
+.checkbox{
+    padding:0px 0px 0px 20px;
+}
+label{
+    display:inline-block;
+}
+fieldset{
+    width:80%;
+    margin:20px 0 20px 0;
+    line-height: 1.6em;
+}
+#name{
+    height:30px;
+}
+#tryRecipe{
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) 
+{
+    #container
+    {
+        display:grid;
+        grid-template-areas: 
+            'header header'
+            'main right'
+            'footer footer';
+        grid-template-columns:80% 20%;
+        grid-template-rows:auto;
+    }
+
+}
+@media only screen and (max-width: 768px) 
+{
+    #container
+    {
+        display:grid;
+        grid-template-areas: 
+            'header'
+            'main'
+            'footer';
+        grid-template-columns:100%;
+    }
+    .radio{
+        display:block;
+        padding:20px;
+    }
+	.dropdown li{
+		display: block;
+		width:250px;
+		text-align: center;
+	}
+	.dropdown a{
+		font-size: 30px;
+	}
+}
